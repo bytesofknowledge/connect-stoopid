@@ -77,7 +77,16 @@ module ConnectStoopid
 			response = @soap_client.call(:run_report_query, :message => request_options)
 
 			if response.success?
-				#
+				xml_doc = Document.new(response.to_xml)
+				rows = []
+				XPath.each(xml_doc, "//ResultRow") do |row|
+					row_key_vals = {}
+					XPath.each(row, "Value") do |col|
+						row_key_vals[col.attributes["Name"].to_s] = col.text.to_s
+					end
+					rows << row_key_vals
+				end
+				return rows
 			end
 		end
 
