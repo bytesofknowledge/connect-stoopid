@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
 	s.name          = "connect-stoopid"
-	s.version       = "0.0.1"
+	s.version       = "0.0.2"
 	s.date          = "2013-04-26"
 	s.summary       = "Run queries against the ConnectWise Reporting SOAP API"
 	s.description   = "Simple Ruby client handling access to the ConnectWise SOAP APIs"
@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
 											"lib/connect-stoopid.rb",
 											"lib/connect-stoopid/reporting-client.rb"
 	]
-	s.homepage      = ""
+	s.homepage      = "https://github.com/jstump/connect-stoopid"
 	s.license       = "GPL-2"
 	s.require_paths = ["lib"]
 end
