@@ -72,7 +72,7 @@ module ConnectStoopid
 
 		def run_report_query(options = {})
 			request_options = base_soap_hash
-			requst_options.merge!(options)
+			request_options.merge!(options)
 
 			response = @soap_client.call(:run_report_query, :message => request_options)
 
