@@ -17,6 +17,7 @@ Usage
 Options
 -------
 When you create a ReportingClient, you can also pass it an options hash as a fifth parameter to override the default client options. The default options are shown below:
+
     @client_options = {
 				:client_logging => true, # Allows the ReportingClient to print occaisional messages
 				:client_logging_level => :error, # Allowed values [:debug, :standard, :error]
