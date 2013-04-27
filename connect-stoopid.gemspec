@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
 	s.name          = "connect-stoopid"
-	s.version       = "0.0.2"
+	s.version       = "0.0.3"
 	s.date          = "2013-04-26"
 	s.summary       = "Run queries against the ConnectWise Reporting SOAP API"
 	s.description   = "Simple Ruby client handling access to the ConnectWise SOAP APIs"
