@@ -1,16 +1,18 @@
-Gem::Specification.new do |s|
-	s.name          = "connect-stoopid"
-	s.version       = "0.0.3"
-	s.date          = "2013-04-26"
-	s.summary       = "Run queries against the ConnectWise Reporting SOAP API"
-	s.description   = "Simple Ruby client handling access to the ConnectWise SOAP APIs"
-	s.authors       = ["Josh Stump"]
-	s.email         = "joshua.t.stump@gmail.com"
-	s.files         = [
-											"lib/connect-stoopid.rb",
-											"lib/connect-stoopid/reporting-client.rb"
+Gem::Specification.new do |spec|
+	spec.name           = "connect-stoopid"
+	spec.version        = "0.1.0"
+	spec.date           = "2013-04-26"
+	spec.summary        = "Run queries against the ConnectWise Reporting SOAP API"
+	spec.description    = "Simple Ruby client handling access to the ConnectWise SOAP APIs"
+	spec.authors        = ["Josh Stump"]
+	spec.email          = "joshua.t.stump@gmail.com"
+	spec.homepage       = "https://github.com/jstump/connect-stoopid"
+	spec.require_paths  = ["lib"]
+	spec.files          = [
+													"lib/connect-stoopid.rb",
+													"lib/connect-stoopid/reporting-client.rb"
 	]
-	s.homepage      = "https://github.com/jstump/connect-stoopid"
-	s.license       = "GPL-2"
-	s.require_paths = ["lib"]
+	spec.license        = "GPL-2"
+	
+	spec.add_dependency('savon', '>= 2.2.0')
 end
