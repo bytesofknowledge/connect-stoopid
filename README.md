@@ -1,7 +1,7 @@
 connect-stoopid
 ===============
 
-The aim of connect-stoopid is to simplify interaction with the ConnectWise SOAP APIs. Built on Savon, the "heavy metal SOAP client". Currently, the gem only supports the CW Reporting API, with the addition of other APIs planned as time allows.
+The aim of connect-stoopid is to simplify interaction with the ConnectWise SOAP APIs. Built on Savon, the "heavy metal SOAP client". Currently, the gem only supports the CW Reporting API, with the addition of other APIs planned as time allows. A note: you should by no means trust what the ConnectWise API documentation says about how SOAP requests should look. 25-50% of the example requests in the documentation are wrong, and attempting to follow them will only lead to a very angry developer. Trust only the information that the WSDL supplies via SoapUI or some similar program.
 
 Installation
 ------------
