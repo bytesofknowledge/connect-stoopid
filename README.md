@@ -19,9 +19,10 @@ Options
 When you create a ReportingClient, you can also pass it an options hash as a fifth parameter to override the default client options. The default options are shown below:
 
     @client_options = {
-				:client_logging => true, # Allows the ReportingClient to print occaisional messages
-				:client_logging_level => :error, # Allowed values [:debug, :standard, :error]
-				:soap_version => 2, # 1 for SOAP 1.1, 2 for SOAP 1.2
-				:soap_logging => false, # Whether or not Savon should post log messages
-				:soap_logging_level => :fatal # Allowed value [:debug, :warn, :error, :fatal]
-		}
+      :client_logging => true, # Allows the ReportingClient to print occaisional messages
+      :client_logging_level => :error, # Allowed values [:debug, :standard, :error]
+      :soap_version => 2, # 1 for SOAP 1.1, 2 for SOAP 1.2
+      :soap_logging => false, # Whether or not Savon should post log messages
+      :soap_logging_level => :fatal # Allowed value [:debug, :warn, :error, :fatal],
+      :return_raw_xml => false # If true, the client will return the raw SOAP response instead of parsed data
+    }
