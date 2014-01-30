@@ -47,4 +47,5 @@ module ConnectStoopid
       return result
   	end
   end
+
 end

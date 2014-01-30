@@ -14,7 +14,6 @@ module ConnectStoopid
   class << self
   	##
   	# Parameters:
-  	# 	psa_address -- The hostname of your ConnectWise PSA, ie. con.companyconnect.net
   	# 	company -- Company id used when logging into ConnectWise
   	# 	username -- ConnectWise Integration username
   	# 	password -- ConnectWise Integration password
