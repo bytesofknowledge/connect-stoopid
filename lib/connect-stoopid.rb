@@ -5,6 +5,7 @@ module ConnectStoopid
 	require 'rexml/document'
 	require 'connect-stoopid/reporting-client'
 	require 'connect-stoopid/time-entry'
+	require 'connect-stoopid/company'
 
   # The WSDL and the SOAP client currently need to be accessible by the API classes.
   class << self; attr_accessor :wsdl end

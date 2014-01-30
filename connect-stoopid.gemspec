@@ -11,7 +11,8 @@ Gem::Specification.new do |spec|
 	spec.files          = [
 													"./lib/connect-stoopid.rb",
 													"./lib/connect-stoopid/reporting-client.rb",
-													"./lib/connect-stoopid/time-entry.rb"
+													"./lib/connect-stoopid/time-entry.rb",
+													"./lib/connect-stoopid/company.rb"
 	]
 	spec.license        = "GPL-2"
 	

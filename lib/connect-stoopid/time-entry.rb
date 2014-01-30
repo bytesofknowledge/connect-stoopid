@@ -36,7 +36,7 @@ module ConnectStoopid
   		begin
   			response = ConnectStoopid.soap_client.call(:add_time_entry, :message => request_options)
   		rescue Savon::SOAPFault => error
-  			log_client_message("SOAP Fault\nError Message:\n#{error}", :error)
+  			ConnectStoopid.log_client_message("SOAP Fault\nError Message:\n#{error}", :error)
   		else
   			if response.success?
           result = true
